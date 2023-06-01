@@ -9,7 +9,7 @@ from enlace_base import client
 db = client.sk
 coleccion = db.pais
 
-print("Borrar registros de una colección cuando continente sea Suramérica")
+print("Borrar registros de latinomerica")
 coleccion.delete_many({'continente':'latinomerica'})
 
 print("Indicar informacion")
