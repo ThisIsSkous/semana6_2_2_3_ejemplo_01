@@ -6,20 +6,13 @@ from enlace_base import client
 
 # se obtiene la colección general (base de datos)
 
-db = client.ejemploMongo001
-coleccion = db.autores
+db = client.sk
+coleccion = db.pais
 
-print("Muestra todos los documentos")
-data_02 = coleccion.find()
-for registro in data_02:
-    print(registro)
+print("Borrar registros de una colección cuando continente sea Suramérica")
+coleccion.delete_many({'continente':'latinomerica'})
 
-# se usa método delete_many con parámetros, a partir de la colección
-# para eliminar un documento de la colección
-print("Proceso para borrar un documento de una colección")
-coleccion.delete_many({'numero_publicaciones':80})
-
-print("Muestra todos los documentos")
-data_02 = coleccion.find()
-for registro in data_02:
+print("Indicar informacion")
+datos = coleccion.find()
+for registro in datos:
     print(registro)
