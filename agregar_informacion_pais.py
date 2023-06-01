@@ -11,9 +11,9 @@ coleccion = db.pais
 
 # proceso que agrega una lista de documentos
 listado = [
-{"nombre": "Bolivia", "continente" : "america del sur", "poblacion":"12079472"},
-{"nombre": "Mexico", "continente" : "merica del norte", "poblacion":"126014024"},
-{"nombre": "Argentina", "continente" : "america del sur", "poblacion":"45808747"}
+{"nombre": "Bolivia", "continente" : "latinomerica", "poblacion":"12079472"},
+{"nombre": "Mexico", "continente" : "latinomerica", "poblacion":"126014024"},
+{"nombre": "Argentina", "continente" : "latinomerica", "poblacion":"45808747"}
 ]
 
 coleccion.insert_many(listado)
